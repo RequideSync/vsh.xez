@@ -1,4 +1,4 @@
-
+-- Open source(Old&Discontinued)
 local UserInputService = game:GetService("UserInputService")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local TweenService = game:GetService("TweenService")
@@ -306,7 +306,7 @@ UserInputService.InputBegan:Connect(
 
 UserInputService.InputBegan:Connect(function(input, gpe)
     if gpe then return end
-    if input.KeyCode == getgenv().keybinds.UIToggle then
+    if input.KeyCode == Enum.KeyCode.P then
         screenGui.Enabled = not screenGui.Enabled
     end
 end)
